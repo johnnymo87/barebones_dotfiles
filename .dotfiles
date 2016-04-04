@@ -1,0 +1,17 @@
+" Turn off vi compatibility
+set nocompatible
+
+set noswapfile
+set nowrap
+
+" indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set smartindent
+set autoindent
+
+" load indent file for the current filetype
+filetype indent on
+
+syntax enable
