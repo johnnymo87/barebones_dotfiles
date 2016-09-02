@@ -29,8 +29,11 @@ let mapleader=","
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
+set number       "Line numbers are good
+set backspace=indent,eol,start  "Allow backspace in insert mode
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
+set visualbell                  "No sounds
 
 " ================ Folds ============================
 
@@ -40,7 +43,7 @@ set nofoldenable        "dont fold by default
 
 " ================ Custom Settings ========================
 
-set noeb vb t_vb= " turn off error beeps
+set shell=/bin/sh
 
 nnoremap ,db :normal orequire 'pry'; binding.pry<ESC>
 
